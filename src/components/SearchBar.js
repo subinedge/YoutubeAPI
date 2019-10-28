@@ -28,7 +28,7 @@ class SearchBar extends Component {
     return(
       <Paper elevation={6} style={{padding:'20px'}}>
         <form onSubmit={this.handleSubmit}>
-          <TextField fullWidth label="Search..." onChange={this.handleChange}/>
+          <TextField fullWidth label="Search for amazing videos..." onChange={this.handleChange}/>
         </form>
       </Paper>
     )
