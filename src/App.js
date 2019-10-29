@@ -6,6 +6,8 @@ import {SearchBar, VideoList, VideoDetail} from './components'
 
 import youtube from './api/youtube'
 
+const key = process.env.REACT_APP_API_KEY
+
 class App extends React.Component {
 
   state = {
@@ -28,7 +30,7 @@ class App extends React.Component {
       params: {
         part: 'snippet',
         maxResults: 10,
-        key: 'AIzaSyA7EHYWFeUBKxSIiQuvwuL-doLcPTcXX6M',
+        key: key,
         q: searchString
       }
     });
@@ -50,7 +52,7 @@ class App extends React.Component {
     return (
       <Grid justify="center" container spacing={10}>
         <Grid item xs={12}>
-          <Grid container spacing={5}>
+          <Grid container spacing={10}>
 
 
             <Grid item xs={12}>
